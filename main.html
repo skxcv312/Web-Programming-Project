@@ -1,8 +1,43 @@
 <!DOCTYPE html>
 <head>
-
+    <meta charset="UTF-8"/>
+    <title>대학생활백서</title>
+    <style type="text/css">
+        ul,ol,dl{list-style:none;}
+    </style>
 </head>
 <body>
-    
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <header style="background-image: url(Campus_images/spring.jpg); height: 300px;">
+        <a href="main.html">대학생활백서</a>
+       
+        <!--style="text-align: right;" -->
+        <span class="right" style="padding:30px 10px;">
+            <a href="login.html" target="display_area">로그인</a>
+            <a href="signup.html" target="display_area">회원가입</a>
+        </span>
+    </header>
+
+    <nav>
+        <table>
+            <br/>
+            <td><a href="study.html" target="display_area"> 공부할 곳 </a></td>
+            <td><a href="restaurant.html" target="display_area"> 밥먹을 곳 </a></td>
+            <td><a href="cafe.html" target="display_area"> 카페 </a></td>
+            <td><a href="bar.html" target="display_area"> 술집 </a></td>
+            <td><a href="home.html" target="display_area"> 생활처 </a></td>
+            <td><a href="tip.html" target="display_area" onclick="doDisplay()"> Tip </a></td>
+        </table>
+    </nav>
+
+    <hr/>
+
+    <article>
+        <iframe id="main_frame" name="display_area" width="500x" height="500px"></iframe>
+        <iframe id="list_frame" name="list_area" style="display: none;" width="200px" height="500px"></iframe>
+    </article>
+      
+    <hr/>
 </body>
